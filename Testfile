@@ -1,5 +1,13 @@
 COmmand to replace the ip address in the Ansible files to use it in next installation.
+
+There are some files where the ip address are like 172-31-19-122.
+
+First repalce the strings with '-' with '-'
+grep -rl "172-31-19-222"  *  | xargs  sed -i 's/172-31-19-222/172-31-18-232/g'
+
 grep -rl "<old ip>"  *  | xargs  sed -i 's/<old ip>/<new ip>/g'
 you will get the old ip from hosts file in this directory.
 
 grep -rl "172.31.19.222"  *  | xargs  sed -i 's/172.31.19.222/172.31.18.232/g'
+
+You may need to edit the /etc/host file with the ip adresses.
