@@ -10,4 +10,16 @@ you will get the old ip from hosts file in this directory.
 
 grep -rl "172.31.19.222"  *  | xargs  sed -i 's/172.31.19.222/172.31.18.232/g'
 
+############################### START OF SAMPLE COMMANDS  ####################################
+grep -rl "172-31-19-95"  *  | xargs  sed -i 's/172-31-19-95/172-31-41-118/g'
+grep -rl "172.31.19.95"  *  | xargs  sed -i 's/172.31.19.95/172.31.41.118/g'
+grep -rl "172-31-25-237"  *  | xargs  sed -i 's/172-31-25-237/172-31-32-216/g'
+grep -rl "172.31.25.237"  *  | xargs  sed -i 's/172.31.25.237/172.31.32.216/g'
+grep -rl "172-31-18-232"  *  | xargs  sed -i 's/172-31-18-232/172-31-41-249/g'
+grep -rl "172.31.18.232"  *  | xargs  sed -i 's/172.31.18.232/172.31.41.249/g'
+
+################################### END OF SMAPLE COMMANDS #####################################
+
+
+
 You may need to edit the /etc/host file with the ip adresses.
